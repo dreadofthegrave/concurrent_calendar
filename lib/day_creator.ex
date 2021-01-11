@@ -35,9 +35,6 @@ defmodule ConcCalendar.DayCreator do
         send sender, {:ok, note}
         day_tuple(day_data)
 
-      {:get_date, sender} ->
-        send sender, {:ok, day}
-        day_tuple(day_data)
     end
   end
 end
